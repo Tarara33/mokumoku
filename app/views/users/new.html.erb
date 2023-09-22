@@ -20,7 +20,7 @@
               <%= f.text_field :name, class: 'form-control' %>
             </div>
             <div class="mb-3">
-              <%= f.select :gender, User.genders_i18n.invert.map{ |key, value| [key, User.genders[value]] } %>
+              <%= f.select :gender, User.genders_i18n.invert, {} %>
             </div>
             <div class="mb-3">
               <%= f.label :email %>
